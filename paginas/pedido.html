@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Pizzaria Duma's</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>PIZZARIA DUMA'S,</h1>
+        <h2>A melhor da região</h2>
+        <img src = "imgs/pizzaria.jpg"/>
+    </header>
+
+    <h2>Pedido de pizza:</h2>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome">
+        </p>
+
+        <p>
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+
+        <p>
+            <label for="isabor">Sabor:</label>
+
+            <select name="sabor" id="isabor">
+                <option value="" disabled selected>
+                    Escolha um sabor de pizza:
+                </option>
+
+                <option value="calabresa">Calabresa</option>
+                <option value="frango">Frango com catupiry</option>
+                <option value="catupiry">Frango</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="iquantidade">Digite a quantidade de pizza(s):</label>
+            <input type="number" name="quantidade" id="iquantidade" min="1">
+        </p>
+
+        <p>
+            <label for="iemail">E-mail:</label>
+            <input type="email" name="email" id="iemail">
+        </p>
+
+    
+
+    </form>
+    <a href="cadastro.html">
+        <button>
+            <h3>enviar</h3>
+        </button>
+    </a>
+    <br>
+    <br>
+    <br>
+
+    <a href="index.html">
+        <button>
+            <h2>voltar ao início</h2>
+        </button>
+    </a>
+
+</body>
+</html>
